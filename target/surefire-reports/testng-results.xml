@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-08T15:09:12 IST" name="Suite" finished-at="2023-06-08T15:09:38 IST" duration-ms="25808">
+    <groups>
+    </groups>
+    <test started-at="2023-06-08T15:09:12 IST" name="Test" finished-at="2023-06-08T15:09:38 IST" duration-ms="25808">
+      <class name="tests.One">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.One@5be6e01c]" started-at="2023-06-08T15:09:12 IST" name="setup" finished-at="2023-06-08T15:09:22 IST" duration-ms="10308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOnChrome()[pri:0, instance:tests.One@5be6e01c]" started-at="2023-06-08T15:09:22 IST" name="testOnChrome" finished-at="2023-06-08T15:09:27 IST" duration-ms="4648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnChrome -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.One@5be6e01c]" started-at="2023-06-08T15:09:27 IST" name="tearDown" finished-at="2023-06-08T15:09:27 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.One -->
+      <class name="tests.Two">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.Two@67a20f67]" started-at="2023-06-08T15:09:12 IST" name="setup" finished-at="2023-06-08T15:09:30 IST" duration-ms="18276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOnFireFox()[pri:0, instance:tests.Two@67a20f67]" started-at="2023-06-08T15:09:30 IST" name="testOnFireFox" finished-at="2023-06-08T15:09:36 IST" duration-ms="5477" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <input class="gNO89b" name="btnK" type="submit"> is not clickable at point (882,471) because another element <span> obscures it
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [32e4ac5c-3251-4ab4-b43d-2b2bb5f5d2f8, clickElement {id=2bc9772d-dfaf-4bb5-9948-561e35aeb59f}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 77.0.1, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 87, moz:profile: /tmp/rust_mozprofileF60tfG, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: LINUX, platformVersion: 5.15.90.1-microsoft-standar..., rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[RemoteWebDriver: firefox on LINUX (32e4ac5c-3251-4ab4-b43d-2b2bb5f5d2f8)] -> xpath: /html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]]
+Session ID: 32e4ac5c-3251-4ab4-b43d-2b2bb5f5d2f8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input class="gNO89b" name="btnK" type="submit"> is not clickable at point (882,471) because another element <span> obscures it
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [32e4ac5c-3251-4ab4-b43d-2b2bb5f5d2f8, clickElement {id=2bc9772d-dfaf-4bb5-9948-561e35aeb59f}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 77.0.1, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 87, moz:profile: /tmp/rust_mozprofileF60tfG, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: LINUX, platformVersion: 5.15.90.1-microsoft-standar..., rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[RemoteWebDriver: firefox on LINUX (32e4ac5c-3251-4ab4-b43d-2b2bb5f5d2f8)] -> xpath: /html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]]
+Session ID: 32e4ac5c-3251-4ab4-b43d-2b2bb5f5d2f8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at tests.Two.testOnFireFox(Two.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnFireFox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Two@67a20f67]" started-at="2023-06-08T15:09:36 IST" name="tearDown" finished-at="2023-06-08T15:09:38 IST" duration-ms="1977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Two -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

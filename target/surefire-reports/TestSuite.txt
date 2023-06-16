@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 27.651 s <<< FAILURE! - in TestSuite
+testOnFireFox(tests.Two)  Time elapsed: 5.5 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+Element <input class="gNO89b" name="btnK" type="submit"> is not clickable at point (882,471) because another element <span> obscures it
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [32e4ac5c-3251-4ab4-b43d-2b2bb5f5d2f8, clickElement {id=2bc9772d-dfaf-4bb5-9948-561e35aeb59f}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 77.0.1, moz:accessibilityChecks: false, moz:buildID: 20200602222727, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 87, moz:profile: /tmp/rust_mozprofileF60tfG, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: LINUX, platformVersion: 5.15.90.1-microsoft-standar..., rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[RemoteWebDriver: firefox on LINUX (32e4ac5c-3251-4ab4-b43d-2b2bb5f5d2f8)] -> xpath: /html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]]
+Session ID: 32e4ac5c-3251-4ab4-b43d-2b2bb5f5d2f8
+	at tests.Two.testOnFireFox(Two.java:26)
+
